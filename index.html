@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .container {
+            max-width: 1300px;
+        }
+
+        .hyperlinks {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.386);
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px black;
+        }
+        a {
+            margin: 0 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: rgb(38, 0, 250);
+        }
+        img {
+            width: 100%;
+            height: 155px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            margin-left: 10px;
+            padding: 5px 15px;
+            background-color: rgb(163, 163, 255);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: rgb(131, 131, 255);
+        }
+        .row img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            font-size: 0.95rem;
+            box-shadow: 1px 1px 1px 1px rgb(147, 135, 135);
+            transition: transform 1.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+    transform: scale(1.05); /* Scale the card slightly larger on hover */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Increase shadow size on hover */
+}
+        .card-body p {
+            font-size: 0.95rem;
+          
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.386);; 
+    padding: 20px 0;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+    color: #000000; 
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+.footer a:hover {
+    color: #000000; 
+}
+
+.social-icons a {
+    font-size: 20px; 
+    color: #000000;
+}
+
+.social-icons a:hover {
+    color: #000000; 
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <img src="pain3.png" alt="Banner Image">
+
+    <nav>
+        <div class="container">
+            <div class="hyperlinks">
+                <a href="#">Home</a>
+                <a href="https://www.livemint.com/money/loan/personal-loan?utm_source=HT&cta_position=L1menu">Loans</a>
+                <a href="#">Business</a>
+                <a href="">Sports</a>
+                <a href="#">Education</a>
+                <a href="#">Politics</a>
+               
+        
+
+                <button class="btn-custom" data-bs-toggle="modal" data-bs-target="#signInModal">Sign in</button>
+                <!-- Sign-In Modal -->
+                <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Full Name</label>
+                                        <input type="email" class="form-control" id="Full Name" placeholder="Enter your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                                    </div>
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" class="btn btn-primary">Sign In</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             
+
+        <!-- Login Modal -->
+        <button class="btn-custom" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mt-4">
+        <div class="row">  
+            <!-- Sidebar Image -->
+            <div class="col-lg-3">
+                <img src="paper.jpg" alt="Sidebar Image">
+            </div>
+    
+            <!-- Main Content with Cards -->
+
+          
+
+            <div class="col-lg-9">
+                <h2>Business</h2>
+                <!-- First Card -->
+                <div class="card mb-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img.avif" class="img-fluid rounded-start" alt="Card Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Indian economy undergoing transformational change to sustain high growth: PM Modi</h5>
+                                <p class="card-text">
+                                    Jobs, skills, sustainable growth and continuing rapid expansion are the focus of Modi 3.0, the prime minister said while addressing the third edition of Kautilya Economic Conclave.                                </p>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="card mb-5">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img1.avif" class="img-fluid rounded-start" alt="Card Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Record-Breaking Start: The Amazon Great Indian Festival 2024 witnessed a record 11 crore customer visits in the first 48 hours, with 80% coming from Tier 2 and smaller towns</h5>
+                                <p class="card-text">
+                                    Over 200,000 customers purchased a mobile phone for the first time, reflecting growing confidence in investing in quality technology.                                </p>
+                                <p class="card-text">
+                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+     
+
+           <!-- third Card -->
+           <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img2.avif" class="img-fluid rounded-start" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Market Crash: Sensex, Nifty plunge amid fears over escalation of Middle East crisis</h5>
+                        <p class="card-text">
+                            Stock Market Crash: While the Sensex dipped by 1,264.2 points to 83,456, the Nifty 50 index was also down 0.97% at 25,548.4 points                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2>Sports</h2>
+
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img4.avif" class="img-fluid rounded-start" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Women’s T20 World Cup: India outplayed as skipper Sophie Devine walks the talk in New Zealand’s massive win
+                        </h5>
+                        <p class="card-text">
+                            Women's T20 World Cup: India looked rusty and off-the-boil as they were blown away by 58 runs in Dubai and suffered a serious early blow to their semifinal hopes.                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img 5.webp" class="img-fluid rounded-start" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Rohit Sharma: Felt alive again after winning the World Cup</h5>
+                        <p class="card-text">
+                            India put behind their heartbreaking loss to Australia in the ODI World Cup final last November to finally end their draught in ICC events, executing yet another near-perfect campaign to clinch a thrilling win in the T20 World Cup summit clash against South Africa.                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img6.webp" class="img-fluid rounded-start" alt="Card Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Record-Breaking Start: The Amazon Great Indian Festival 2024 witnessed a record 11 crore customer visits in the first 48 hours, with 80% coming from Tier 2 and smaller towns</h5>
+                        <p class="card-text">
+                            As HIL returns with a renewed vigour, one of the early headlines is PR Sreejesh being named Director of Hockey by the Delhi franchise where he will be reunited with former India head coach Graham Reid.                        <p class="card-text">
+                            <small class="text-body-secondary">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        </div>
+
+
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100  width=200"   >
+                <img src="img7.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <a href="https://indianexpress.com/article/cities/hyderabad/transgender-persons-hyderabad-traffic-revanth-reddy-9567179/">
+                  <p class="card-text">Transgender persons to be deployed to manage traffic in Hyderabad: CM Revanth Reddy</p>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100  width=20">
+                <img src="img8.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="https://indianexpress.com/article/cities/hyderabad/politicians-industrialists-film-stars-in-hyderabad-long-arm-of-the-hydra-causes-a-stir-9540534/">
+                  <p class="card-text">Politicians, industrialists, film stars — in Hyderabad, long arm of the Hydra causes a stir</p>
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100   width=20">
+                <img src="image9.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <a href="https://indianexpress.com/article/cities/hyderabad/telugu-choreographer-jani-master-accused-sexual-favours-exchange-work-9571709/">
+                  <p class="card-text">Telugu choreographer Jani Master accused of seeking ‘sexual favours in exchange for work’</p>
+                 </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100  width=20">
+                <img src="img10.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                <a href="https://indianexpress.com/article/cities/hyderabad/jagan-mohan-reddy-tirupati-temple-laddu-9590835/"> 
+                  <p class="card-text">As Jagan Mohan Reddy plans to visit Tirupati tomorrow, a look at the political storm surrounding it</p>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+<br><br>
+
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Maha 'Lakshmi' in RTC</h1></h5>
+                <p class="card-text">The RTC has  taken profits from losses. With the Mahalaxmi scheme. Introduced by the goverment, the income has doubled with the provision of free bus travel facility for women</p>
+                <a href="https://www.eenadu.net/telugu-news/districts/warangal-news/697/124181345"  class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">QR Code: One QR code for each family</h5>
+                <p class="card-text">the exercise of designing a family digital card to be provided to every famaily in the state has reached the final stage.the officials who studied the four states briefed.......</p>
+                <a href="https://www.eenadu.net/telugu-news/ts-top-news/qr-code-for-every-family-in-telangana/2601/124181404"  class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Diffculties for college Education</h5>
+                <p class="card-text">the lack of infastruture in junior collages is causing porblems to students and faculty. things have not improved over the years and we have tosuffer constantly. the govermen....</p>
+                <a href="https://www.eenadu.net/telugu-news/andhra-pradesh/online-examination-system-in-higher-education/1702/124181549" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">TS DSC Result 2024: Teacher Recruitment Forms on 9th</h5>
+                <p class="card-text">TS DSC Result 2024 has been declared by the Directorate of School Education, Government of Telangana at tgdsc aptonline on 30 September. Candidates can check the direct ........</p>
+                <a href="https://www.eenadu.net/telangana" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<footer class="footer text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">About Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Nation</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Entertainment</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="me-3"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-spotify"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="  text-center p-3 ">
+        <small>TERMS OF USE / PRIVACY POLICY</small><br>
+        <small>Copyright © 2024, THG PUBLISHING PVT LTD.....</small>
+    </div>
+</footer>
+
+<!-- Font Awesome for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</body>
+</html>
+
+
+
